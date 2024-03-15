@@ -1,124 +1,115 @@
 @import './globals.css';
 
-body {
-  min-height: 100vh;
-  background: #ffffff;
-}
-
-header {
-  min-width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0.75rem 2rem;
-
-  font-size: 1.5rem;
-
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-
-    li a {
-      text-decoration: none;
-      color: #000000;
-
-      display: inline-block;
-      position: relative;
-
-      max-width: fit-content;
-    }
-
-    li a:after {
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: #000000;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-
-    li a:hover:after {
-      width: 100%;
-      left: 0;
-    }
-  }
-
-  >a {
-    text-decoration: none;
-
-    background: #0057FF;
-    color: #ffffff;
-    font-weight: 700;
-    padding: 0.5rem 1.25rem;
-    border-radius: 6px;
-    transition: all 400ms;
-
-    &:hover {
-      background: #407ef9;
-    }
-  }
-}
-
 main {
   margin-top: 4rem;
   padding: 0 2rem;
 
   display: flex;
   justify-content: space-between;
+  min-width: 100%;
 
   section {
     max-width: 40vw;
 
-    h1 {
-      font-size: 3rem;
-      color: #003FB9;
-    }
-
-    p {
-      font-size: 1.75rem;
-      color: #555555;
-      font-weight: 600;
-      margin-top: 1.5rem;
-    }
-
+    
+    
     .actions {
       margin-top: 2.5rem;
-
+      
       display: flex;
       align-items: center;
       gap: 0.5rem;
-
+      
       .registration-link {
-        background: linear-gradient(90deg, rgba(83, 83, 83, 1) 0%, rgba(0, 0, 0, 1) 100%);
-        padding: 0.5rem 1rem;
+        background-color: #535353;
+        padding: 1rem 2rem;
         color: #ffffff;
         font-weight: 600;
         font-size: 1.5rem;
         text-decoration: none;
         border-radius: 6px;
-        margin-right: 2rem;
-
+        
+        transition: background 400ms;
+        
         &:hover {
-          text-decoration: underline;
+          background: #2a2a2a;
         }
       }
-
-      .social-media-link {
-        margin-right: 0.5rem;
-      }
-
-      .social-media-link img {
-        height: 2.25rem;
-        width: 2.25rem;
-      }
     }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  color: #003FB9;
+}
+
+p {
+  font-size: 1.75rem;
+  color: #555555;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+figure img {
+  max-width: 40vw;
+}
+
+@media screen and (max-width: 1280px) {
+  figure img {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  section {
+    min-width: 100%;
+    text-align: center;
+
+    a.registration-link{
+      margin: 0 auto;
+    }
+  }
+
+  .actions {
+    justify-content: space-between;
+  }
+
+  .medias-box {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p,
+  a {
+    font-size: 1.15rem;
+  }
+
+  a.registration-link{
+    text-align: center;
+    padding: 30rem;
   }
 }
