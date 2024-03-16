@@ -18,12 +18,18 @@
   <meta name="og:description" content="Mudando vidas atravéz de códigos">
   <meta name="og:image" content="https://ibb.co/c6dzzgj">
   <meta name="og:url" content="https://gusales.github.io/mission-moment/">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
   <header>
     <img src="./src/assets/images/site-logo.svg" alt="Logo da empresa Coding Lifes" />
 
-    <nav>
+    <button class="open-mobile-menu" id="menuBtn">
+      <i class="ph ph-list"></i>
+    </button>
+
+    <nav id="navListMenu">
       <ul>
         <li><a href="index.html" class="active-location-link">Home</a></li>
         <li><a href="">Sobre nós</a></li>
@@ -47,5 +53,7 @@
       <img src="./src/assets/images/peoples.png" alt="..." />
     </figure>
   </main>
+
+  <script src="./src/scripts/mobileMenu.js"></script>
 </body>
 </html>
