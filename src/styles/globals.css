@@ -22,8 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-@import './globals.css';
-
 main {
   margin-top: 4rem;
   padding: 0 2rem;
