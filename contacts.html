@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossos canais de comunicação || Coding Lifes</title>
+
+  <link rel="stylesheet" href="./src/styles/contacts.css" />
+  <link rel="shortcut icon" href="./src/assets/images/app-icon.png" type="image/png" />
+
+  <meta name="description" content="Uma escola de programação com pretenções de mudar o mundo através de códigos" />
+  <meta name="keywords" content="escola, programação, ensino, mundo, crianças" />
+  <meta name="author" content="Gustavo Sales" />
+  <meta name="robots" content="index, follow" />
+
+  <meta name="og:title" content="Entre em contato com a Coding Lifes" />
+  <meta name="og:description" content="Nossos canais de comunicação" />
+  <meta name="og:image" content="https://ibb.co/c6dzzgj" />
+  <meta name="og:url" content="https://gusales.github.io/mission-moment/" />
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <header>
+    <img src="./src/assets/images/site-logo.svg" alt="Logo da empresa Coding Lifes" />
+
+    <button class="open-mobile-menu" id="menuBtn">
+      <i class="ph ph-list"></i>
+    </button>
+
+    <nav id="navListMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre nós</a></li>
+        <li><a href="courses.html">Cursos</a></li>
+        <li>
+          <a href="contacts.html" class="active-location-link">Fale conosco</a>!
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#" class="header-registration-link">Matricule-se agora!</a>
+  </header>
+
+  <main>
+    <section class="adresses">
+      <div class="contact-card">
+        <figure>
+          <i class="ph-fill ph-map-pin-line"></i>
+        </figure>
+        <h2 class="contact-type">Nosso escritório</h2>
+        <address class="contact-description">
+          Rua Camilo, 3366, Vila Romana <br />
+          São Paulo - SP
+        </address>
+      </div>
+      <div class="contact-card">
+        <figure><i class="ph-fill ph-phone"></i></figure>
+        <h2 class="contact-type">Número de Telefone</h2>
+        <address class="contact-description">
+          <a href="tel:+551190000-0000">(11)90000-0000</a>
+        </address>
+      </div>
+      <div class="contact-card">
+        <figure><i class="ph ph-envelope"></i></figure>
+        <h2 class="contact-type">Email</h2>
+        <p class="contact-description">
+          <a href="mailto:codinglifes@support.com.br">
+            codinglifes@support.com.br
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="form-contact">
+      <form action="">
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Insira um email válido" />
+        </div>
+        <div class="input-field">
+          <label for="name">Nome</label>
+          <input type="text" id="email" placeholder="Insira seu nome" />
+        </div>
+        <div class="input-field">
+          <label for="message">Mensagem</label>
+          <textarea id="message" placeholder="Insira aqui sua mensagem"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <section>
+        <h1>Entre em contato!</h1>
+        <p>A equipe e secretária da Coding Lifes se orgulha de oferecer sempre o melhor para nossos alunos e buscamos
+          tornar um mundo em um lugar melhor para todos viverem! Navegue pelos nossos cursos, registre-se e venha fazer
+          parte dessa história!</p>
+
+        <div class="medias-sociais">
+          <a href="">
+            <i class="ph-fill ph-instagram-logo"></i>
+          </a>
+          <a href="">
+            <i class="ph-bold ph-whatsapp-logo"></i>
+          </a>
+          <a href="">
+            <i class="ph-fill ph-linkedin-logo"></i>
+          </a>
+          <a href="">
+            <i class="ph-fill ph-facebook-logo"></i>
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./src/scripts/mobileMenu.js"></script>
+</body>
+
+</html>
