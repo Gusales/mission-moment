@@ -9,17 +9,27 @@ Imagine uma empresa fictícia que não busca apenas o lucro, mas sim a transform
 
 Embarquei nesta jornada para criar uma landing page que transmita a missão e os valores desta empresa fictícia. Como o Super-Homem disse uma vez: "Um símbolo de esperança para aqueles que precisam."
 
-![App Screenshot](./.github/preview.png)
+![App Screenshot](./.github/preview.jpeg)
 
 <hr />
 
 ## 🚀 Tecnologias utilizadas
 - HTML5;
 - CSS3;
+- Javascript;
+- <a href="https://phosphoricons.com/" target="_blank">Phosphor Icons</a>;
 
 ## ⚒️ Funcionalidades do site
 
-- Em construção...
+- **Página inicial** com os princípios da empresa;
+- **Página sobre** que fala sobre os ideias da empresa e seus objetivos;
+- **Página de cursos**, onde o usuário terá acesso aos conteúdos que serão abordados ao se matricular;
+- **Página de contatos**, onde o usuário terá acesso a todas as informações de contato da empresa, bem como suas redes sociais e um formulário de CTA para contato via email;
+- **Design resposivo** para diversas plataformas.
+
+## 🚀 Acesse a demo do site
+
+Acesse o deploy da aplicação <a href="https://gusales.github.io/mission-moment/">por aqui!</a>.
 
 ## 🔗 Fontes bibliográficas
 
